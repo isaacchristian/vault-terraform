@@ -9,3 +9,11 @@ terraform {
   }
 }
 
+terraform {
+  cloud {
+    organization = "vault-transit"
+    workspaces {
+      name = "vault-terraform"
+    }
+  }
+}
